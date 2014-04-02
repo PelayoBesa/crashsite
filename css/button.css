@@ -1,0 +1,42 @@
+.button {
+    margin-bottom: 5px;
+}
+
+.button > .filler{
+    background-color: lightgrey;
+    width: 0;
+    z-index: 1;
+}
+
+.button > .text{
+    position: relative;
+    z-index: 2;
+    border: 1px solid black;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none;
+}
+
+.dark{
+    height:100%;
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color:black;
+    filter: alpha(opacity=80);   /* internet explorer */
+    -khtty: 0.80;                /* khtml, old safari */
+    -moz-opacity: 0.80;          /* mozilla, netscape */
+    opacity: 0.80;               /* fx, safari, opera */
+}
+
+.flicker{
+    filter: alpha(opacity=20);   /* internet explorer */
+    -khtty: 0.2;                /* khtml, old safari */
+    -moz-opacity: 0.2;          /* mozilla, netscape */
+    opacity: 0.2;  
+}

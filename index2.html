@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/button.css">
+
+        <script src="./js/elements/utils.js"></script>
+
+        <script src="./js/elements/probability_generator.js"></script>
+        <script src="./js/elements/button.js"></script>
+        <script src="./js/timeline.js"></script>
+
+        <script src="./js/elements/population.js"></script>
+        <script src="./js/elements/inventory.js"></script>
+
+        <script src="./js/state.js"></script>
+
+        <script src="./js/elements/crashsite/survivor.js"></script>
+        <script src="./js/rooms/crashsite.js"></script>
+
+        <script src="./js/engine.js"></script>
+
+    </head>
+    <body>
+        <!--  <div class="dark"></div> -->
+        <div id="container" class="container">
+            <div id="sidebar" class="sidebar"></div>
+            <div class="content">
+                <a href="#openModal">Open Modal</a>
+                <h2 id="location" class="location"></h2>
+                <h4 id="submessage" class="submessage"></h4>
+                <div id="room-content"></div>
+            </div>
+        </div>
+        <div id="openModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Modal</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Este es un super modal</p>
+                </div>
+                <div class="modal-footer">
+                    <p class="center">
+                    <a href="#close">Accept</a>
+                    <a href="#close">Close</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var engine = new Engine();
+        engine.start();
+    </script>
+</html>
